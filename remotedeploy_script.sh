@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-sh ahladh@54.244.209.186 '
+ssh ahladh@54.244.209.186 '
 var=$(ps -ef | grep -v grep | grep tomcat8 | wc -l )
 
 if [ $var -lt 1 ]
