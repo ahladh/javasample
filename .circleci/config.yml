@@ -5,6 +5,6 @@ jobs:
       - image: maven:latest
     steps:
       - checkout
-      -run: | 
+      - run: | 
          ls
          
