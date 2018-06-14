@@ -8,8 +8,9 @@ jobs:
       - run: | 
          cd  SpringMVCSecurityXML
          mvn  install
-      - persist_to_workspace:
-           root: ./target
+      - persist_to_workspace:  /root/project/SpringMVCSecurityXML/target
+           root: workspace
+            
            path: 
              - /SpringMVCSecurityXML.war
   build2:
