@@ -9,9 +9,9 @@ jobs:
          cd  SpringMVCSecurityXML
          mvn  install
       - persist_to_workspace:  
-           root: /root/project/SpringMVCSecurityXML
+           root: . 
            path: 
-             - ./target/SpringMVCSecurityXML.war
+             - /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war
   build2:
     docker:
       - image: tomcat:8-jre8
