@@ -7,8 +7,9 @@ jobs:
       - checkout
       - run: | 
          cd  SpringMVCSecurityXML
-         mvn clean install
+         mvn  install
          cd target
+         ls
        
          
          
