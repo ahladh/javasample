@@ -16,12 +16,11 @@ jobs:
           cd workspace
           ls
       - persist_to_workspace:  
-           root: /root/project/workspace
+           root: ./workspace
            path: 
-             - ./workspace/SpringMVCSecurityXML.war
+             - ./project/workspace/SpringMVCSecurityXML.war
              
              
-
 workflows: 
   build_and_deploy:
      jobs:
