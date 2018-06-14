@@ -17,7 +17,7 @@ jobs:
       - image: tomcat:8-jre8
     steps:
       - attach_workspace:
-                at: /tmp/usr/local/tomcat/webapps 
+                at: /usr/local/tomcat/webapps/root/project 
 workflows: 
   version: 2
   build_and_deploy:
