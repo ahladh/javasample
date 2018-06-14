@@ -19,6 +19,7 @@ jobs:
     steps:
       - attach_workspace:
                 at: /usr/local/tomcat/webapps/ 
+      - run: ls
 workflows: 
   version: 2
   build_and_deploy:
