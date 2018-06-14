@@ -9,7 +9,7 @@ jobs:
          cd  SpringMVCSecurityXML
          mvn  install
          cd target
-         ls
+         pwd
        
          
          
