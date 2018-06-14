@@ -1,6 +1,6 @@
 version: 2
 jobs: 
-  build11: 
+  build: 
     working_directory: /tmp
     docker:
       - image: maven:latest
