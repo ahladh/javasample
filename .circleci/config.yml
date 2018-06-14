@@ -5,8 +5,8 @@ jobs:
       - image: maven:latest
     steps:
       - checkout
-      - run: | 
-         mkdir workspace
+      - run: mkdir workspace
+      - run: |
          cd  SpringMVCSecurityXML
          mvn  install
       - persist_to_workspace:  
@@ -18,7 +18,7 @@ jobs:
       - image: tomcat:8-jre8
     steps:
       - attach_workspace:
-                at: /usr/local/tomcat/webapps/root/project 
+                at: /usr/local/tomcat/webapps/ 
 workflows: 
   version: 2
   build_and_deploy:
