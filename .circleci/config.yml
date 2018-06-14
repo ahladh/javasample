@@ -1,6 +1,6 @@
 version: 2
 jobs: 
-  build11: 
+  build1: 
     docker:
       - image: maven:latest
     steps:
@@ -18,20 +18,7 @@ jobs:
            root: /root/project/workspace
            path: 
              - SpringMVCSecurityXML.war
-  build2:
-    docker:
-      - image: tomcat:8-jre8
-    steps:
-      - attach_workspace:
-                at: /usr/local/tomcat/webapps/ 
-      - run: ls
-workflows: 
-  build_and_deploy:
-     jobs:
-      - build11
-      - build2:
-        requires:
-           - build11
+
          
 
 
