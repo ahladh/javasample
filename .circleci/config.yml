@@ -10,9 +10,8 @@ jobs:
          mvn  install
       - persist_to_workspace:  
            root: /root/project/SpringMVCSecurityXML
-            
            path: 
-             - /target/SpringMVCSecurityXML.war
+             - ./target/SpringMVCSecurityXML.war
   build2:
     docker:
       - image: tomcat:8-jre8
