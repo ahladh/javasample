@@ -1,1 +1,29 @@
+version: 2
+jobs: 
+  build11: 
+    docker:
+      - image: maven:latest
+    steps:
+      - checkout
+      - run: | 
+         cd  SpringMVCSecurityXML
+         mvn  install
+      - persist_to_workspace:
+           root: workspace
+           path: 
+             - /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war
+  build2:
+    docker:
+      - image: tomcat:8-jre8
+    steps:
+      - attach_workspace:
+                at: /usr/local/tomcat/webapps 
+workflows: 
+  version: 2
+  build_and_deploy:
+     jobs:
+      - build1
+      - build2:
+        requires:
+           - build11
 
