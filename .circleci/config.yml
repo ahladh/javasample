@@ -26,4 +26,4 @@ workflows:
       - build1
       - build2
         requires:
-          - build1
+           - build1
