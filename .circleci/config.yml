@@ -12,7 +12,7 @@ jobs:
       - persist_to_workspace:  
            root: workspace
            path: 
-             - ./project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war
+             - ./SpringMVCSecurityXML/target/SpringMVCSecurityXML.war
   build2:
     docker:
       - image: tomcat:8-jre8
