@@ -1,6 +1,7 @@
 version: 2
 jobs: 
   build11: 
+    working_directory: /tmp
     docker:
       - image: maven:latest
     steps:
@@ -14,17 +15,6 @@ jobs:
           mv   /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war /root/project/workspace
           cd workspace
           ls
-      - persist_to_workspace:  
-           root: workspace
-           path: 
-             - ./workspace/SpringMVCSecurityXML.war
-             
-            
-workflows: 
-  version: 2
-  build_and_deploy:
-     jobs:
-      - build11
 
          
 
