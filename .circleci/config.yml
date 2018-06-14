@@ -1,6 +1,6 @@
 version: 2
 jobs: 
-  build1: 
+  build11: 
     docker:
       - image: maven:latest
     steps:
@@ -25,4 +25,4 @@ workflows:
       - build1
       - build2:
         requires:
-           - build1
+           - build11
