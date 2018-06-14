@@ -24,6 +24,6 @@ workflows:
   build_and_deploy:
      jobs:
       - build1
-      - build2
-        requires
+      - build2:
+        requires:
            - build1
