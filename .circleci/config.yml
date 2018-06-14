@@ -10,6 +10,7 @@ jobs:
          cd  SpringMVCSecurityXML
          mvn  install
          mv   /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war /root/project/workspace
+         cd workspace
          ls
          
 
