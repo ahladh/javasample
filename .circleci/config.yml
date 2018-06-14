@@ -18,7 +18,7 @@ jobs:
       - persist_to_workspace:  
            root: /root/project/workspace
            path: 
-             - SpringMVCSecurityXML.war
+             - ./workspace/SpringMVCSecurityXML.war
              
              
 
