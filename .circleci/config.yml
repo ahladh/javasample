@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: | 
-           cd  SpringMVCSecurityXML
+         cd  SpringMVCSecurityXML
          mvn  install
       - persist_to_workspace:  
            root: /root/project 
