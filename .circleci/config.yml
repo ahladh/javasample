@@ -1,6 +1,6 @@
 version: 2
 jobs: 
-  build1: 
+  build: 
     docker:
       - image: maven:latest
     steps:
