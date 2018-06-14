@@ -1,6 +1,6 @@
 version: 2
 jobs: 
-  build: 
+  build11: 
     docker:
       - image: maven:latest
     steps:
@@ -18,6 +18,13 @@ jobs:
            root: /root/project/workspace
            path: 
              - SpringMVCSecurityXML.war
+             
+            
+workflows: 
+  version:2
+  build_and_deploy:
+     jobs:
+      - build11
 
          
 
