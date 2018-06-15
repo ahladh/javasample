@@ -13,7 +13,7 @@ jobs:
                cd SpringMVCSecurityXML
                 mvn clean install
                 cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
-               cd ahladh
+               cd /root/project/ahladh
                ls
          - persist_to_workspace:
                root: ahladh
