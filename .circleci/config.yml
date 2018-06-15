@@ -11,7 +11,7 @@ jobs:
               
                mkdir /root/project/ahladh
                cd SpringMVCSecurityXML
-                mvn clean install
+                mvn  install
                 cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
                cd /root/project/ahladh
                ls
