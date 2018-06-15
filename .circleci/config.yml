@@ -8,17 +8,17 @@ jobs:
 
          - checkout
          - run: |
-               pwd
-               ls 
+              
                mkdir /root/project/ahladh
-               touch /root/project/ahladh/text
-               echo "ahladh hi" > /root/project/ahladh/text
+               cd SpringMVCSecurityXML
+                mvn clean install
+                cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
                cd ahladh
                ls
          - persist_to_workspace:
                root: ahladh
                paths: 
-                  - text 
+                  - SpringMVCSecurityXML.war
                
                 
                               
