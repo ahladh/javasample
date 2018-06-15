@@ -1,38 +1,49 @@
 version: 2
-jobs: 
-  build11: 
-    working_directory: /root/project
+jobs:
+  build11:
+
     docker:
-      - image: maven:latest
+         - image: maven:latest
     steps:
-      - checkout
-      - run: mkdir workspace
-      - run: |
-         cd  SpringMVCSecurityXML
-         mvn  install
-      
-      - run: |
-          mv   /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war /root/project/workspace
-          cd workspace
-          ls
-      - persist_to_workspace:  
-           root: workspace
-           path: 
-             - SpringMVCSecurityXML.war
-                         
-  build2:
+
+         - checkout
+         - run: |
+               pwd
+               ls 
+               mkdir /root/project/ahladh
+               touch /root/project/ahladh/text
+               echo "ahladh hi" > /root/project/ahladh/text
+               cd ahladh
+               ls
+         - persist_to_workspace:
+               root: ahladh
+               paths: 
+                  - text 
+               
+                
+                              
+  build22:
+
     docker:
-      - image: tomcat:8-jre8
-    steps:
-      - attach_workspace:
-                at: /usr/local/tomcat/webapps/ 
-      - run: ls
+         - image: tomcat:8-jre8
+    steps: 
+         - checkout
+         - attach_workspace: 
+             at: /root/project/ahladh
+         - run: | 
+             ls
+            
+          
+                  
+                
 workflows: 
-  build_and_deploy:
+  version: 2
+  build:
      jobs:
       - build11
-      - build2:
-        requires:
-           - build11
+      - build22: 
+          requires: 
+            - build11
+
 
 
