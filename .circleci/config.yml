@@ -32,6 +32,8 @@ jobs:
              at: /root/project/ahladh
          - run: | 
              ls
+             cd ahladh
+             ls
             
           
                   
