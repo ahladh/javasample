@@ -14,7 +14,7 @@ jobs:
                 mvn  install
                 cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
                cd /root/project/ahladh
-               ls
+               
          - persist_to_workspace:
                root: ahladh
                paths: 
