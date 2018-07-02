@@ -33,6 +33,7 @@ jobs:
              at: /root/project/ahladh
          - run: | 
              ls
+             ls
              cp /root/project/ahladh/SpringMVCSecurityXML.war /usr/local/tomcat/webapps
              ls /usr/local/tomcat/webapps/
           
