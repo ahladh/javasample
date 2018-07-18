@@ -1,4 +1,3 @@
-version: 2
 jobs:
   build11:
 
@@ -8,19 +7,18 @@ jobs:
 
          - checkout
          - run: |
-         
+              
                mkdir /root/project/ahladh
                cd SpringMVCSecurityXML
-               mvn  install
-               cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
+                mvn  install
+                cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
                cd /root/project/ahladh
-               
+               ls
          - persist_to_workspace:
                root: ahladh
                paths: 
                   - SpringMVCSecurityXML.war
-         - store_artifacts:
-               path: /root/project/ahladh/SpringMVCSecurityXML.war
+               
                 
                               
   build22:
@@ -32,7 +30,6 @@ jobs:
          - attach_workspace: 
              at: /root/project/ahladh
          - run: | 
-             ls
              ls
              cp /root/project/ahladh/SpringMVCSecurityXML.war /usr/local/tomcat/webapps
              ls /usr/local/tomcat/webapps/
@@ -47,6 +44,3 @@ workflows:
       - build22: 
           requires: 
             - build11
-
-
-
