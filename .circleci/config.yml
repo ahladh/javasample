@@ -23,7 +23,7 @@ jobs:
                   - SpringMVCSecurityXML.war
                   
          - store_artifacts:
-               path: /root/project/ahladh/SpringMVCSecurityXML.war
+               path: /root/project/ahladh/chandu/SpringMVCSecurityXML.war
                
                 
                               
