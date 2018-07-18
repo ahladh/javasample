@@ -19,6 +19,9 @@ jobs:
                root: ahladh
                paths: 
                   - SpringMVCSecurityXML.war
+                  
+         - store_artifacts:
+               path: /root/project/ahladh/SpringMVCSecurityXML.war
                
                 
                               
