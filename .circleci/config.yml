@@ -19,7 +19,7 @@ jobs:
                hostname
          - run: hostname
          - persist_to_workspace:
-               root: chandu
+               root: ahladh/chandu
                paths: 
                   - SpringMVCSecurityXML.war
                   
