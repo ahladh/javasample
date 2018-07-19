@@ -10,7 +10,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>SpringMVCSecurityXML Maven Webapp</name>
   <url>http://maven.apache.org</url>
- 
+   
+  <scm>
+    <connection>scm:git:https://github.com/ahladh/javasample</connection>
+  </scm>
  
  
  
@@ -152,6 +155,14 @@
                     <port>8899</port>
                 </configuration>
                 -->   
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.10.0</version>
+                  <configuration>
+                     <connectionType>connection</connectionType>
+                </configuration>
             </plugin>
         </plugins>
     </build>        
