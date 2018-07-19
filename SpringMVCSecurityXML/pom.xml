@@ -150,8 +150,8 @@
                 <!--
                 <configuration>
                     <path>/</path>
-                    <port>8899</port>
-                </configuration> 
+                    <port>8899</port> test
+                </configuration>  
                 -->   
             </plugin>
             <plugin>
