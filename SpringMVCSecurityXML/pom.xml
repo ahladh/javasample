@@ -13,7 +13,6 @@
    
   <scm>
     <connection>scm:git:https://github.com/ahladh/javasample</connection>
-    <developerConnection>scm:git[push=]:https://github.com/ahladh/javasample</developerConnection>
   </scm>
  
  
@@ -160,17 +159,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-plugin</artifactId>
-                <version>1.10.1</version>
+                <version>1.10.0</version>
                   <configuration>
                      <connectionType>connection</connectionType>
-                </configuration>
-            </plugin>
-             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.10.1</version>
-                  <configuration>
-                     <connectionType>developerConnection</connectionType>
                 </configuration>
             </plugin>
         </plugins>
