@@ -1,18 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-   http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.o7planning</groupId>
   <artifactId>SpringMVCSecurityXML</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   <name>SpringMVCSecurityXML Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
   <scm>
     <connection>scm:git:https://github.com/ahladh/javasample</connection>
+    <tag>HEAD</tag>
   </scm>
  
  
@@ -153,7 +151,7 @@
                 <configuration>
                     <path>/</path>
                     <port>8899</port>
-                </configuration>
+                </configuration> test
                 -->   
             </plugin>
             <plugin>
