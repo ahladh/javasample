@@ -7,8 +7,6 @@ jobs:
 
          - checkout
          - run: |
-              
-              
                mkdir /root/project/ahladh
                cd SpringMVCSecurityXML
                 mvn  install
