@@ -9,7 +9,7 @@ jobs:
          - run: |
               
               
-               mkdir  /root/project/ahlad
+               mkdir  /root/project/ahladh
                cd SpringMVCSecurityXML
                 mvn  install
                 cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
@@ -23,10 +23,8 @@ jobs:
                   - SpringMVCSecurityXML.war
                   
          - store_artifacts:
-               path: /root/project/ahladh/chandu/SpringMVCSecurityXML.war
-               
-                
-                              
+               path: /root/project/ahladh/chandu/SpringMVCSecurityXML.war          
+                                             
   build22:
 
 
