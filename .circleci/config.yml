@@ -16,7 +16,7 @@ jobs:
                 cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh/chandu
                cd /root/project/ahladh
                ls
-               hostname
+
          - run: hostname
          - persist_to_workspace:
                root: ahladh/chandu
