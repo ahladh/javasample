@@ -9,17 +9,16 @@ jobs:
          - run: |
               
               
-               mkdir  /root/project/ahladh
-               mkdir /root/project/ahladh/chandu
+               mkdir  /root/project/ahlad
                cd SpringMVCSecurityXML
                 mvn  install
-                cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh/chandu
+                cp  /root/project/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war  /root/project/ahladh
                cd /root/project/ahladh
                ls
 
          - run: hostname
          - persist_to_workspace:
-               root: ahladh/chandu
+               root: ahladh
                paths: 
                   - SpringMVCSecurityXML.war
                   
@@ -36,7 +35,7 @@ jobs:
     steps: 
          - checkout
          - attach_workspace: 
-             at: /root/project/ahladh/chandu
+             at: /root/project/ahladh
          - run: | 
              ls
              cp /root/project/ahladh/SpringMVCSecurityXML.war /usr/local/tomcat/webapps
