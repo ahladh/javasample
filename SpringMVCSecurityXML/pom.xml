@@ -174,8 +174,8 @@
     </build>        
     <distributionManagement>
       <repository>
-        <id>Ram_Generic_local</id>
-        <url>http://52.199.254.229:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_Generic_local</url>
+        <id>Ram_test_Maven_Release</id>
+        <url>http://52.199.254.229:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_test_Maven_Release</url>
       </repository>
     </distributionManagement>      
 </project>
