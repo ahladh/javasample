@@ -4,13 +4,13 @@
   <groupId>org.o7planning</groupId>
   <artifactId>SpringMVCSecurityXML</artifactId>
   <packaging>war</packaging>
-  <version>0.0.11-SNAPSHOT</version>
+  <version>0.0.11</version>
   <name>SpringMVCSecurityXML Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
  <scm>
     <connection>scm:git:https://github.com/ahladh/javasample</connection>
-    <tag>HEAD</tag>
+    <tag>v0.0.11</tag>
   </scm> 
  
  
