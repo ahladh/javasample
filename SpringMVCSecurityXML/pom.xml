@@ -8,10 +8,10 @@
   <name>SpringMVCSecurityXML Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
-  <scm>
+ <scm>
     <connection>scm:git:https://github.com/ahladh/javasample</connection>
     <tag>HEAD</tag>
-  </scm>
+  </scm> 
  
  
  
@@ -174,8 +174,13 @@
     </build>        
     <distributionManagement>
       <repository>
-        <id>Ram_test_Maven_Release</id>
-        <url>http://52.199.254.229:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_test_Maven_Release</url>
+        <id>release</id>
+        <url>http://52.199.254.229:8081/artifactory/Ram_test_Maven_Release</url>
       </repository>
+       <snapshotRepository>
+        <id>snapshot</id>
+        <url>http://52.199.254.229:8081/artifactory/Ram_test_Maven_Release</url>
+      </snapshotRepository>
+
     </distributionManagement>      
 </project>
