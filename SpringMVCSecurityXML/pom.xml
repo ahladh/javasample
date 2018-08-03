@@ -175,11 +175,11 @@
     <distributionManagement>
       <repository>
         <id>release</id>
-        <url>http://52.199.254.229:8081/artifactory/Ram_test_Maven_Release</url>
+        <url>http://35.231.190.77:8081/repository/ah-test/</url>
       </repository>
        <snapshotRepository>
         <id>snapshot</id>
-        <url>http://52.199.254.229:8081/artifactory/Ram_test_Maven_Release</url>
+        <url>http://35.231.190.77:8081/repository/ah-test/</url>
       </snapshotRepository>
 
     </distributionManagement>      
