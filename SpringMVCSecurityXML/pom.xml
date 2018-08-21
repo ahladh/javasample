@@ -177,10 +177,5 @@
         <id>release</id>
         <url>http://35.231.153.163:8081/repository/test/</url>
       </repository>
-       <snapshotRepository>
-        <id>snapshot</id>
-        <url>http://35.231.153.163:8081/repository/test/</url>
-      </snapshotRepository>
-
     </distributionManagement>      
 </project>
