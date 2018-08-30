@@ -175,7 +175,7 @@
     <distributionManagement>
       <repository>
         <id>release</id>
-        <url>http://35.231.153.163:8081/repository/test/</url>
+        <url>http://35.196.207.7:8081/repository/Snapshots/</url>
       </repository>
     </distributionManagement>      
 </project>
