@@ -4,13 +4,13 @@
   <groupId>com.accessholding.services</groupId>
   <artifactId>stp.StpDebitCheque</artifactId>
   <packaging>war</packaging>
-  <version>0.0.25-SNAPSHOT</version>
+  <version>0.0.25</version>
   <name>SpringMVCSecurityXML Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
  <scm>
     <connection>scm:git:https://github.com/ahladh/javasample</connection>
-    <tag>v0.0.12</tag>
+    <tag>v0.0.25</tag>
   </scm> 
  
  
